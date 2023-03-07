@@ -43,7 +43,7 @@ def play():
             if select_game_mode == settings.GAME_MOD[0].lower():
                 player.score += 5
                 level += 1
-                enemy = models.HardEnemy(level)
+                enemy = models.Enemy(level)
                 print('lvl up>>>>>>>>>>>\n'
                       'CREATE NEW ENEMY\n'
                       f'Level = {level + 1}')
